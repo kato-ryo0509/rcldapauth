@@ -1,0 +1,17 @@
+<?php
+// PEAR Auth LDAP options
+// See all options at http://pear.php.net/manual/en/package.authentication.auth.storage.ldap.php
+$rcmail_config['ldapauth']['host'] = 'localhost';
+$rcmail_config['ldapauth']['basedn'] = 'dc=my,dc=domain';
+$rcmail_config['ldapauth']['port'] = 389;
+$rcmail_config['ldapauth']['version'] = 3;
+$rcmail_config['ldapauth']['binddn'] = NULL;
+$rcmail_config['ldapauth']['bindpw'] = NULL;
+$rcmail_config['ldapauth']['userattr'] = 'uid';
+$rcmail_config['ldapauth']['userfilter'] = '(objectClass=posixAccount)';
+// Attributes mapped to create user identity
+$rcmail_config['ldapauth']['attr_name'] = 'cn';
+$rcmail_config['ldapauth']['attr_mail'] = 'mail';
+$rcmail_config['ldapauth']['attr_user'] = 'uid';
+
+?>
